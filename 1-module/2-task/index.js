@@ -1,14 +1,7 @@
-/**
- * Эту функцию трогать не нужно
- */
 function print(text) {
   console.log(text);
 }
 
-/**
- * Эту функцию нужно поменять так,
- * чтобы функция sayHello работала корректно
- */
 function isValid(name) {
   return (name !== null && name.length >= 4 && !/\s/.test(name));
 }
