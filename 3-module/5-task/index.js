@@ -3,11 +3,8 @@ function getMinMax(str) {
   const chaosArr = garbage.map((itm) => {
     return parseFloat(itm[1], 10);
   });
-  const ready = chaosArr.sort(function (a, b) {
-    return a - b;
-  });
   return {
-    min: ready[0],
-    max: ready[ready.length - 1],
+    min: Math.min.apply(null, chaosArr),
+    max: Math.max.apply(null, chaosArr),
   };
 }

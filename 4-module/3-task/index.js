@@ -11,7 +11,7 @@ function highlight(table) {
     } else if (available === "false") {
       currentRow.classList.add("unavailable");
     } else {
-      currentRow.setAttribute("hidden", "true");
+      currentRow.hidden = "true";
     }
     if (gender === "m") {
       currentRow.classList.add("male");
